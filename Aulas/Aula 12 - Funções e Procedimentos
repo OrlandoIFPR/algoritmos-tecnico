@@ -1,0 +1,65 @@
+Função é um bloco de códigos que executa uma tarefa bem definida, sendo que essa tarefa pode ser executada (chamada) diversas vezes num mesmo programa. 
+A função deve ser escrita no início do programa, antes de ser chamada. Em uma função podemos ou não passar valores (dentro dos parênteses), que são chamados de parâmetros. Quando uma função processa variáveis externas (parâmetros), dentro dos parênteses e vamos chamá-la, dentro do programa principal, após o nome da função deve constar uma variável (ou valor) para cada parâmetro passado, separadas por vírgula.
+Estrutura de uma função: Sempre é iniciada com o comando def, seguido do nome da função e parênteses. Todos os comandos da função devem estar com o texto recuado, da mesma forma como a estrutura IF e While. As funções retornam um valor através do return.
+Exemplo:
+
+def MEDIA(A, B):
+    M=(A + B) / 2
+    return (M)
+
+N1 = int(input('Digite o 1º Número: '))
+N2 = int(input('Digite o 2º Número: '))
+print(MEDIA(N1,N2)) 
+#Se eu quero mostrar o valor, preciso usar o print (Nome_da_função) no programa principal
+
+###########################################################################
+# Também posso usar o valor do retorno em outras operações, ex.:
+TOTAL = MEDIA(10,N2) + 8 #posso passar variáveis ou valores (10,N2) como parâmetros da função
+print (TOTAL)
+
+#Outro exemplo:
+
+def SOMA(X, Y, Z):
+    RESULTADO = X + Y + Z
+    return (RESULTADO)
+
+A = int(input('Digite o 1º Número: '))
+B = int(input('Digite o 2º Número: '))
+C = int(input('Digite o 3º Número: '))
+print(SOMA(A, B, C))
+# Ou pode ser passado os valores diretamente:
+print (SOMA(4,5,7))
+
+###########################################################################
+
+Procedimento X Função X Método
+
+Procedimento
+Conjunto de comandos a serem executados. Não possui retorno. Ex.:
+def erro():
+    print("Um erro inesperado ocorreu. Reinicie o sistema.")
+Função
+É um procedimento que realiza uma tarefa específica e pode ser acessada em qualquer parte do programa após a sua declaração. Ex.:
+def soma(A, B):
+    RES = A + B
+    return (RES)
+Método
+É uma função ou procedimento associado a um objeto ou classe, também chamado de "função membro". O método é chamado em um objeto específico e só pode ser usado em associação com esse objeto.
+math.sqrt(25), minha_lista.append(3), meu_texto.upper()
+
+Parâmetro X Argumento
+Parâmetro
+É uma variável que é definida na função. Os parâmetros são especificados entre parênteses, após o nome do método. Ex:
+def soma(A, B):  # A e B são parâmetros da função soma
+Argumento
+É o valor que é passado para a função quando ela é chamada. Os argumentos podem vir de uma variável ou expressão. Ex.:
+Resultado = soma (X,Y) # X e Y são argumentos que serão passados à função soma
+
+Lista, vetor, tupla
+Vetor: armazena uma sequência de dados do mesmo tipo, em posições consecutivas na memória. Ex: 
+idades [13,15,12,13,14]
+Lista: armazena uma sequência de quantidade indefinida de dados, que podem ser de tipos distintos ou não. Ex.:
+Lista = [ “Claudio”, 47, 1.85, “Jaqueline”, 40, 1.55]
+Tupla: também armazena uma sequência de informações, mas se diferencia de listas e vetores por seus elementos serem imutáveis. Ex.:
+Coordenadas = (2.345, -3.567)
+Ponto = (3, 5)
