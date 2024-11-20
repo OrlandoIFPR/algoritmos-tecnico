@@ -1,0 +1,32 @@
+Lista de Atividades
+
+1.	Faça uma função que recebe por parâmetro o raio de uma esfera e calcula o seu volume 
+Dica: VOLUME = 4/3*Pi *RAIO3.          
+
+2.	Escreva uma função que recebe um número, testa se não é negativo e retorna sua raiz quadrada:
+
+3.	Elabore uma função que recebe um número e retorna se é par ou ímpar.
+
+4.	Faça uma função que recebe 2 números inteiros e retorna o primeiro elevado ao segundo.
+
+5.	Crie um procedimento em que o usuário passa um número inteiro e é impresso na tela a sequência de Fibonacci com esta quantidade de elementos.
+
+6.	Crie uma função que recebe por parâmetro os valores necessários para o cálculo da fórmula de Bhaskara e retorna as suas raízes, caso seja possível calcular.
+
+7.	Faça uma função que recebe as 3 medidas dos lados de um triângulo e informa se as medidas formam um triângulo válido. (A soma de dois lados deve ser maior que o terceiro.)
+
+8.	Faça uma função que recebe as 3 medidas dos lados de um triângulo, verifica se os lados formam um triângulo, chamando a função criada no exercício anterior e informa se ele é Equilátero, Isósceles ou escaleno. 
+
+9.	Faça uma função que recebe a média final de um aluno por parâmetro e retorna o seu conceito, conforme a tabela abaixo:
+Nota	Conceito
+  de 0,0 a 4,9	D
+  de 5,0 a 6,9	C
+  de 7,0 a 8,9	B
+  de 9,0 a 10,0	A
+10.	Crie uma função que recebe, por parâmetro, a altura (Alt) e o sexo de uma pessoa e retorna o seu peso ideal. Para homens, calcular o peso ideal usando a fórmula Peso_ideal = 72.7 x Alt - 58 e, para mulheres, Peso_ideal = 62.1 x Alt - 44.7. 
+
+11.	Escreva uma função que recebe, por parâmetro, um valor inteiro e positivo e retorna o Fatorial desse valor.
+
+12.	 Faça um procedimento que recebe um número e imprime a tabuada deste número!
+
+13.	Crie uma função que recebe a quantidade de pessoas e a capacidade de passageiros de uma VAN e retorna quantas VANS serão necessárias (lotadas) e quantos passageiros restarão.
