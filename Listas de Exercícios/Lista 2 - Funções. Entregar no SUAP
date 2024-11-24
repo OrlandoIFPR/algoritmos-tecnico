@@ -1,0 +1,18 @@
+1.	Crie uma função que recebe um valor e uma lista e retorna a lista sem este valor (deve apagar todos os valores, se houver mais de um)
+2.	Crie uma função que recebe um texto (com palavras separadas por espaço) e retorna uma lista com todas as palavras. Exemplo: “Eu fui à feira” deve retornar: [“eu”, “fui”, “à”, “feira”]. Não usar o método split().
+3.	Elabore uma função que recebe uma lista ou uma string (texto) e retorna na ordem inversa. (Não use métodos prontos. Use apenas, se quiser, a função len().
+4.	Faça uma função que recebe duas listas, e retorna a concatenação e ambas. (Não use os métodos append() e/ou o operador +.
+5.	Crie duas funções: uma que recebe uma senha em formato de texto e a criptografa e outra que descriptografa a senha. Crie o seu algoritmo de criptografia.
+6.	Faça um programa que tenha uma lista vazia chamada e duas funções chamadas sorteia() e somaPar(). A primeira função vai sortear 7 números e vai colocá-los dentro da lista e a segunda função vai mostrar a soma entre todos os valores pares sorteados pela função anterior.
+Para obter números inteiros aleatórios, usamos randint, do módulo ramdom. Exemplo que gera 10 números aleatórios:
+from random import randint
+for s in range(10):
+    X = randint(0,100)
+    print(X)
+
+7.	Desafio: Construa uma função que recebe uma lista e retorna os valores ordenados em ordem crescente. Não pode usar funções prontas. 	Poderá usar apenas o len() e o append().
+
+Orientações:
+	Pode ser feito em duplas. Apenas um(a) estudante posta, um arquivo com todos os exercícios feitos.
+	Na primeira linha deve estar o nome do/a(s) estudantes.
+	Entrega no SUAP até o dia 01/12.
