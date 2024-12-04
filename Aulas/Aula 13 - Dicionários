@@ -1,0 +1,65 @@
+Dicionário
+Um dicionário em Python é uma estrutura de dados que armazena pares de chave-valor, sendo uma coleção de itens acessados por uma chave específica.  Em grosso modo, pode ser comparado a uma lista onde, invés de eu acessar o valor pelo índice, faço o acesso pela chave. O dicionário Python é uma ferramenta útil para projetos complexos, como o desenvolvimento de algoritmos de inteligência artificial. A sua principal vantagem é a velocidade de recuperação de dados, pois o acesso a um valor é muito rápido, independentemente do tamanho do dicionário
+Criando uma variável do tipo dicionário:
+Nas listas, usamos colchetes []    lista = []
+Nas Tuplas, usamos parênteses ()  tupla = ()
+Nos dicionários, usamos chaves {}  dicionário = {}
+Como dito, invés do índice, temos que inserir o campo chave, entre aspas seguido de dois pontos (:)  e o valor. Cada conjunto chave-valor deve estar separado por vírgula. Exemplo:
+estudante = {}  # cria um dicionário vazio. Poderia ser também: estudante = dict()
+
+estudante = {"nome": "Claudio", “sexo”: “M”, "idade": 18}  # Cria o dicionário estudante com nome, sexo e idade
+
+Para imprimir na tela:
+print(estudante) # imprime o dicionário com chaves e valores
+print(estudante.values()) # imprime apenas valores
+print(estudante.keys()) # imprime os campos chaves
+print(estudante.items()) # imprime ambos acima
+
+Para imprimir um dos dados do dicionário:
+print(estudante['nome']) # imprime o nome
+print(estudante['idade'])  # imprime a idade
+`
+Para apagar um item:
+del pessoas['sexo']
+
+Para alterar um item:
+estudante['nome'] = "João"
+
+Para inserir uma chave no dicionário:
+estudante['altura'] = 1.85
+
+Se eu quiser imprimir todos os valores de um dicionário, posso usar uma estrutura for, com duas variáveis, a primeira é a chave, a segunda é o valor. Exemplo:
+for chave, valor in estudante.items():
+    print(chave, "é", valor)
+Outro exemplo:
+amigos = { "João": 25,  "Ana": 30, "Carlos": 28}
+for nome, idade in amigos.items():
+print(f"{nome} tem {idade} anos.")
+
+Quantidade de itens em um dicionário:  Para saber quantos elementos há em nosso dicionário, usamos o comando len(). 
+quantidade_amigos = len(amigos)
+print(f"Existem {quantidade_amigos} amigos na lista.")
+
+Armazenando dicionários: E se eu quiser guardar o registro de vários estudantes? A maneira mais utilizada é criando uma lista [] com os dicionários:
+ListaAlunos = []
+for x in range (3):
+    estudante = {}
+    n = input("Digite o nome: ")
+    estudante["nome"] = n
+    i = int(input("Digite a idade: "))
+    estudante["idade"] = i
+    c = input("Digite o curso: ")
+    estudante["curso"] = c
+    ListaAlunos. append(estudante) # Se não criar uma lista vazia, usar o método .copy()
+print (ListaAlunos)
+
+Acessando o nomo do segundo aluno:
+Se eu quiser saber o nome do segundo aluno, basta acessar o índice [1] da ListaAlunos e o valor da chave “nome” do dicionário:
+print(ListaAlunos[1]["nome"])
+
+# Calculando a média de idade da Lista acima:
+soma = 0
+for aluno in ListaAlunos:
+    soma += aluno["idade"] 
+print("Soma: ", soma)
+print("Media: ", soma/len(ListaAlunos))
