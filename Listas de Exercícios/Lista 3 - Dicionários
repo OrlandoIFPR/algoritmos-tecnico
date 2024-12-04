@@ -1,0 +1,31 @@
+Lista de exercícios:
+1. Crie um dicionário de tradução que adicione palavras de um idioma para outro (por exemplo, inglês para Português). Peça ao usuário para inserir uma palavra em inglês e, em seguida, imprima a tradução correspondente.
+2. Crie um dicionário que represente o estoque de uma loja, com produtos como chaves e quantidades em estoque como valores. O usuário digitará o nome de um produto e, se estiver no dicionário, o programa indica a quantidade em estoque; caso contrário, informe que o produto não foi encontrado.
+3. Complemente o exercício 2. Caso o produto não esteja no estoque, adicione no dicionário “Itens_Em_Falta” com quantidade = 0.
+4. Crie um programa que conte a frequência de palavras em uma frase ou texto inserido pelo usuário e armazene essa informação em um dicionário. Imprima o dicionário com as contagens de palavras.
+texto = input("Digite um texto: ")
+palavras = texto.split()
+contagem_palavras = {}
+Com um for percorra todas as palavras. Se a palavra já estiver no dicionário, a quantidade receberá + 1. Se a palavra não estiver no dicionário, você deverá adicioná-la.
+5. Faça um programa que leia o nome e a altura de 4 pessoas, guardando tudo em um dicionário. No final, mostre o nome e a altura da pessoa mais alta.
+6. Transforme as listas a seguir em um dicionário. A primeira lista compreende as chaves e a segunda os valores nas respectivas posições.
+Celulares = [“Motorola”, “Samsung”, “Positivo”, “Xiaomi”, “LG”]
+Vendas = [12, 17, 11, 16, 21]
+
+
+Questões para entregar no SUAP
+
+7. Crie um programa que leia nome, ano de nascimento e se possui carteira de trabalho e cadastre-o (com idade) em um dicionário. Se por acaso a Carteira de trabalho for diferente de ZERO, o dicionário receberá também o ano de contratação. Calcule e acrescente ao dicionário, além da idade, com quantos anos a pessoa vai se aposentar.
+* Para se aposentar, precisa de 35 anos de trabalho OU 65 anos de idade.
+8. Crie um programa que gerencie o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de gols feitos em cada partida. No final*, tudo isso será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.
+*No final, o dicionário deverá conter: Nome, quantidade de partidas, total de gols no campeonato.
+9. Crie um programa que leia nome, gênero e idade de várias pessoas, guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma lista. No final, mostre: 
+A) Quantas pessoas foram cadastradas 
+B) A média de idade 
+C) Uma lista apenas com pessoas do gênero feminino 
+D) Uma lista com o nome das pessoas com idade acima da média
+10. Desafio (não precisa entregar): Crie um programa que simula o jogo de dados entre 4 jogadores. O sistema irá gerar números aleatórios entre 1 e 6 que serão armazenados em um dicionário com seus nomes: “Claudio”, “João”, “Jeanine” e “Cleverton”.
+No fim o sistema deverá excluir do dicionário quem tirou o menor número e apresentar em ordem decrescente os três jogadores: Exemplo:
+1º colocado: João com 6 pontos
+2º colocado: Jeanine com 4 pontos
+3º colocado: Claudio com 3 pontos
